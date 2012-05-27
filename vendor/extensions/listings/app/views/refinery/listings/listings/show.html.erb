@@ -1,0 +1,105 @@
+<% content_for :body_content_title do %>
+  <%= @listing.address %>
+<% end %>
+
+<% content_for :body_content_left do %>
+  <section>
+    <h1>Address</h1>
+    <p>
+      <%=raw @listing.address %>
+    </p>
+  </section>
+  <section>
+    <h1>City</h1>
+    <p>
+      <%=raw @listing.city %>
+    </p>
+  </section>
+  <section>
+    <h1>State</h1>
+    <p>
+      <%=raw @listing.state %>
+    </p>
+  </section>
+  <section>
+    <h1>Neighborhood</h1>
+    <p>
+      <%=raw @listing.neighborhood %>
+    </p>
+  </section>
+  <section>
+    <h1>Price</h1>
+    <p>
+      <%=raw @listing.price %>
+    </p>
+  </section>
+  <section>
+    <h1>Mls No</h1>
+    <p>
+      <%=raw @listing.mls_no %>
+    </p>
+  </section>
+  <section>
+    <h1>Square Feet</h1>
+    <p>
+      <%=raw @listing.square_feet %>
+    </p>
+  </section>
+  <section>
+    <h1>Bedrooms</h1>
+    <p>
+      <%=raw @listing.bedrooms %>
+    </p>
+  </section>
+  <section>
+    <h1>Bathrooms</h1>
+    <p>
+      <%=raw @listing.bathrooms %>
+    </p>
+  </section>
+  <section>
+    <h1>Open House</h1>
+    <p>
+      <%=raw @listing.open_house %>
+    </p>
+  </section>
+  <section>
+    <h1>Video Tour Url</h1>
+    <p>
+      <%=raw @listing.video_tour_url %>
+    </p>
+  </section>
+  <section>
+    <h1>Tagged Features</h1>
+    <p>
+      <%=raw @listing.tagged_features %>
+    </p>
+  </section>
+  <section>
+    <h1>Photo</h1>
+    <p>
+      <%= image_fu @listing.photo, nil %>
+    </p>
+  </section>
+  <section>
+    <h1>Map</h1>
+    <p>
+      <%=raw @listing.map %>
+    </p>
+  </section>
+<% end %>
+
+<% content_for :body_content_right do %>
+  <aside>
+    <h2><%= t('.other') %></h2>
+    <ul id="listings">
+      <% @listings.each do |listing| %>
+        <li>
+          <%= link_to listing.address, refinery.listings_listing_path(listing) %>
+        </li>
+      <% end %>
+    </ul>
+  </aside>
+<% end %>
+
+<%= render '/refinery/content_page' %>

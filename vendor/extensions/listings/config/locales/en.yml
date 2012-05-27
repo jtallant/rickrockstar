@@ -1,0 +1,40 @@
+en:
+  refinery:
+    plugins:
+      listings:
+        title: Listings
+    listings:
+      admin:
+        listings:
+          actions:
+            create_new: Add New Listing
+            reorder: Reorder Listings
+            reorder_done: Done Reordering Listings
+          records:
+            title: Listings
+            sorry_no_results: Sorry! There are no results found.
+            no_items_yet: There are no Listings yet. Click "Add New Listing" to add your first listing.
+          listing:
+            view_live_html: View this listing live <br/><em>(opens in a new window)</em>
+            edit: Edit this listing
+            delete: Remove this listing forever
+      listings:
+        show:
+          other: Other Listings
+  activerecord:
+    attributes:
+      'refinery/listings/listing':
+        address: Address
+        city: City
+        state: State
+        neighborhood: Neighborhood
+        price: Price
+        mls_no: Mls No
+        square_feet: Square Feet
+        bedrooms: Bedrooms
+        bathrooms: Bathrooms
+        open_house: Open House
+        video_tour_url: Video Tour Url
+        tagged_features: Tagged Features
+        photo: Photo
+        map: Map

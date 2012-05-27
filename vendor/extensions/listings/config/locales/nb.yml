@@ -1,0 +1,40 @@
+nb:
+  refinery:
+    plugins:
+      listings:
+        title: Listings
+    listings:
+      admin:
+        listings:
+          actions:
+            create_new: Lag en ny Listing
+            reorder: Endre rekkefølgen på Listings
+            reorder_done: Ferdig å endre rekkefølgen Listings
+          records:
+            title: Listings
+            sorry_no_results: Beklager! Vi fant ikke noen resultater.
+            no_items_yet: Det er ingen Listings enda. Klikk på "Lag en ny Listing" for å legge til din første listing.
+          listing:
+            view_live_html: Vis hvordan denne listing ser ut offentlig <br/><em>(åpner i et nytt vindu)</em>
+            edit: Rediger denne listing
+            delete: Fjern denne listing permanent
+      listings:
+        show:
+          other: Andre Listings
+  activerecord:
+    attributes:
+      'refinery/listings/listing':
+        address: Address
+        city: City
+        state: State
+        neighborhood: Neighborhood
+        price: Price
+        mls_no: Mls No
+        square_feet: Square Feet
+        bedrooms: Bedrooms
+        bathrooms: Bathrooms
+        open_house: Open House
+        video_tour_url: Video Tour Url
+        tagged_features: Tagged Features
+        photo: Photo
+        map: Map

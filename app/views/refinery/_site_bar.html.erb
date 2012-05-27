@@ -1,0 +1,22 @@
+<% if refinery_user? && "#{controller_name}##{action_name}" != 'pages#preview' %>
+  <% unless admin? # all required JS included by backend. %>
+    <% content_for :stylesheets, stylesheet_link_tag('refinery/site_bar') unless !!local_assigns[:exclude_css] %>
+    <%= yield(:stylesheets) unless local_assigns[:head] or local_assigns[:exclude_css] %>
+  <% end -%>
+  <div id='ae_site_bar'>
+    <div id='ae_site_bar_content' class='clearfix'>
+      <div id='ae_editor_switch'>
+        <%= site_bar_switch_link -%>
+      </div>
+      <a id="cms-logo" href="http://agentevolution.com">Agent Evolved</a>
+      <div id='ae_site_bar_branding'>
+        <span id='ae_site_bar_company_name'>
+          <%= Refinery::Core.site_name %> | 
+        </span>
+
+        <%= link_to t('.log_out', site_bar_translate_locale_args),
+                    refinery.destroy_refinery_user_session_path, :id => 'logout' %>
+      </div>
+    </div>
+  </div>
+<% end %>

@@ -1,0 +1,40 @@
+fr:
+  refinery:
+    plugins:
+      listings:
+        title: Listings
+    listings:
+      admin:
+        listings:
+          actions:
+            create_new: Créer un(e) nouve(au/l/lle) Listing
+            reorder: Réordonner les Listings
+            reorder_done: Fin de réordonnancement des Listings
+          records:
+            title: Listings
+            sorry_no_results: "Désolé ! Aucun résultat."
+            no_items_yet: 'Il n''y a actuellement aucun(e) Listing. Cliquer sur "Créer un(e) nouve(au/l/lle) Listing" pour créer votre premi(er/ère) listing.'
+          listing:
+            view_live_html: Voir ce(t/tte) listing <br/><em>(Ouvre une nouvelle fenêtre)</em>
+            edit: Modifier ce(t/tte) listing
+            delete: Supprimer définitivement ce(t/tte) listing
+      listings:
+        show:
+          other: Autres Listings
+  activerecord:
+    attributes:
+      'refinery/listings/listing':
+        address: Address
+        city: City
+        state: State
+        neighborhood: Neighborhood
+        price: Price
+        mls_no: Mls No
+        square_feet: Square Feet
+        bedrooms: Bedrooms
+        bathrooms: Bathrooms
+        open_house: Open House
+        video_tour_url: Video Tour Url
+        tagged_features: Tagged Features
+        photo: Photo
+        map: Map

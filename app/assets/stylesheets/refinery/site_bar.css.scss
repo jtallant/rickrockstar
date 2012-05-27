@@ -1,0 +1,42 @@
+#ae_site_bar {position: relative;}
+
+#ae_editor_switch,#cms-logo,#ae_site_bar_branding {position:absolute;}
+
+#ae_site_bar {
+  top: 0;
+  height: 50px !important;
+  background: #820000 !important;
+  color: #fff;
+  font-family: arial, sans-serif;
+  width: 100%;
+  min-width: 800px;
+
+  a,a:hover {color: #fff; text-decoration: none;}
+
+  #ae_editor_switch a {
+    left: 0;
+    display: block;
+    height: 32px;
+    width: 310px;
+    background: #333;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding-top: 18px;
+    text-align: center;
+    font-size: 14px
+  }
+
+  a#cms-logo {
+    text-transform: uppercase;
+    font-size: 25px;
+    left: 42%;
+    padding-top: 12px
+  }
+
+  #ae_site_bar_branding {
+    right: 40px;
+    padding-top: 15px;
+    float: right;
+    font-size: 20px;
+  }
+}

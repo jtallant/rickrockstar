@@ -1,0 +1,40 @@
+nl:
+  refinery:
+    plugins:
+      listings:
+        title: Listings
+    listings:
+      admin:
+        listings:
+          actions:
+            create_new: Maak een nieuwe Listing
+            reorder: Wijzig de volgorde van de Listings
+            reorder_done: Klaar met het wijzingen van de volgorde van de Listings
+          records:
+            title: Listings
+            sorry_no_results: Helaas! Er zijn geen resultaten gevonden.
+            no_items_yet: Er zijn nog geen Listings. Druk op 'Maak een nieuwe Listing' om de eerste aan te maken.
+          listing:
+            view_live_html: Bekijk deze listing op de website <br/><em>(opent een nieuw venster)</em>
+            edit: Bewerk deze listing
+            delete: Verwijder deze listing voor eeuwig
+      listings:
+        show:
+          other: Andere Listings
+  activerecord:
+    attributes:
+      'refinery/listings/listing':
+        address: Address
+        city: City
+        state: State
+        neighborhood: Neighborhood
+        price: Price
+        mls_no: Mls No
+        square_feet: Square Feet
+        bedrooms: Bedrooms
+        bathrooms: Bathrooms
+        open_house: Open House
+        video_tour_url: Video Tour Url
+        tagged_features: Tagged Features
+        photo: Photo
+        map: Map

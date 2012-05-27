@@ -1,0 +1,41 @@
+es:
+  refinery:
+    plugins:
+      listings:
+        title: Listings
+#        article: masculino/femenino
+    listings:
+      admin:
+        listings:
+          actions:
+            create_new: Crear nuevo listing
+            reorder: Reordenar listings
+            reorder_done: Reordenación de listings completada
+          records:
+            title: Listings
+            sorry_no_results: Lo siento, no hay resultados
+            no_items_yet: No hay listings todavía. Pulsa en "Crear nuevo Listing" para crear tu primer listing.
+          listing:
+            view_live_html: Ver este listing como abierto al público <br/><em>(abre en ventana nueva)</em>
+            edit: Editar este listing
+            delete: Borrar este listing para siempre
+      listings:
+        show:
+          other: Otros listings
+  activerecord:
+    attributes:
+      'refinery/listings/listing':
+        address: Address
+        city: City
+        state: State
+        neighborhood: Neighborhood
+        price: Price
+        mls_no: Mls No
+        square_feet: Square Feet
+        bedrooms: Bedrooms
+        bathrooms: Bathrooms
+        open_house: Open House
+        video_tour_url: Video Tour Url
+        tagged_features: Tagged Features
+        photo: Photo
+        map: Map
