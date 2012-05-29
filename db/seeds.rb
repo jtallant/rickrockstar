@@ -19,9 +19,9 @@ Refinery::Inquiries::Engine.load_seed
 Refinery::Listings::Engine.load_seed
 
 # Home About Blog Contact Listings
-['Buyers','Communities','Sellers','Property Search','Business Directory'].each do |page|
-	Refinery::Page.find_or_create_by_title(page)
-end
+# ['Buyers','Communities','Sellers','Property Search','Business Directory'].each do |page|
+# 	Refinery::Page.find_or_create_by_title(page)
+# end
 
 
 # Create all communities and a child page of homes for each one
