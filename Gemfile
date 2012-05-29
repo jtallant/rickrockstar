@@ -24,6 +24,10 @@ end
 
 gem 'jquery-rails'
 
+group :production do
+  gem 'pg', '0.12.2'
+end
+
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
 
@@ -50,6 +54,4 @@ gem 'refinerycms-inquiries', '~> 2.0.0'
 gem 'refinerycms-search', '~> 2.0.0', :git => 'git://github.com/resolve/refinerycms-search.git', :branch => '2-0-stable'
 gem 'refinerycms-page-images', '~> 2.0.0'
 gem 'refinerycms-listings', :path => 'vendor/extensions'
-gem 'heroku'
-gem 'pg'
 gem 'fog'
