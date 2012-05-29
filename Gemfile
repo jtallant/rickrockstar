@@ -6,7 +6,7 @@ gem 'rails', '3.2.3'
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
 group :development, :test do
-  gem 'sqlite3'
+  gem 'pg'
 end
 
 
@@ -50,4 +50,3 @@ gem 'refinerycms-inquiries', '~> 2.0.0'
 gem 'refinerycms-search', '~> 2.0.0', :git => 'git://github.com/resolve/refinerycms-search.git', :branch => '2-0-stable'
 gem 'refinerycms-page-images', '~> 2.0.0'
 gem 'refinerycms-listings', :path => 'vendor/extensions'
-gem "pg", "~> 0.13.2"
