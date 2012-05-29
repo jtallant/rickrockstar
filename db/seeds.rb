@@ -18,6 +18,11 @@ Refinery::Inquiries::Engine.load_seed
 # Added by Refinery CMS Listings extension
 Refinery::Listings::Engine.load_seed
 
+# Home About Blog Contact Listings
+['Buyers','Communities','Sellers','Property Search','Business Directory'].each do |page|
+	Refinery::Page.find_or_create_by_title(page)
+end
+
 
 # Create all communities and a child page of homes for each one
 # ['Redding', 'Anderson', 'Cottonwood', 'Shasta Lake City', 'Palo Cedro', 'Lakehead', 'Lake California'].each do |page|

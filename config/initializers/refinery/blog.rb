@@ -3,7 +3,7 @@ Refinery::Blog.configure do |config|
 
   # config.comments_per_page = 10
 
-  # config.posts_per_page = 10
+  config.posts_per_page = 10
 
   # config.post_teaser_length = 250
 
