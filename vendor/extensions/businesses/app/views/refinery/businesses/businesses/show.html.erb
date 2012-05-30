@@ -1,0 +1,75 @@
+<% content_for :body_content_title do %>
+  <%= @business.name %>
+<% end %>
+
+<% content_for :body_content_left do %>
+  <section>
+    <h1>Name</h1>
+    <p>
+      <%=raw @business.name %>
+    </p>
+  </section>
+  <section>
+    <h1>Website</h1>
+    <p>
+      <%=raw @business.website %>
+    </p>
+  </section>
+  <section>
+    <h1>Phone</h1>
+    <p>
+      <%=raw @business.phone %>
+    </p>
+  </section>
+  <section>
+    <h1>Street</h1>
+    <p>
+      <%=raw @business.street %>
+    </p>
+  </section>
+  <section>
+    <h1>City</h1>
+    <p>
+      <%=raw @business.city %>
+    </p>
+  </section>
+  <section>
+    <h1>State</h1>
+    <p>
+      <%=raw @business.state %>
+    </p>
+  </section>
+  <section>
+    <h1>Area</h1>
+    <p>
+      <%=raw @business.area %>
+    </p>
+  </section>
+  <section>
+    <h1>Category</h1>
+    <p>
+      <%=raw @business.category %>
+    </p>
+  </section>
+  <section>
+    <h1>Photo</h1>
+    <p>
+      <%= image_fu @business.photo, nil %>
+    </p>
+  </section>
+<% end %>
+
+<% content_for :body_content_right do %>
+  <aside>
+    <h2><%= t('.other') %></h2>
+    <ul id="businesses">
+      <% @businesses.each do |business| %>
+        <li>
+          <%= link_to business.name, refinery.businesses_business_path(business) %>
+        </li>
+      <% end %>
+    </ul>
+  </aside>
+<% end %>
+
+<%= render '/refinery/content_page' %>

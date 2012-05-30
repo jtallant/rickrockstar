@@ -1,0 +1,35 @@
+en:
+  refinery:
+    plugins:
+      businesses:
+        title: Businesses
+    businesses:
+      admin:
+        businesses:
+          actions:
+            create_new: Add New Business
+            reorder: Reorder Businesses
+            reorder_done: Done Reordering Businesses
+          records:
+            title: Businesses
+            sorry_no_results: Sorry! There are no results found.
+            no_items_yet: There are no Businesses yet. Click "Add New Business" to add your first business.
+          business:
+            view_live_html: View this business live <br/><em>(opens in a new window)</em>
+            edit: Edit this business
+            delete: Remove this business forever
+      businesses:
+        show:
+          other: Other Businesses
+  activerecord:
+    attributes:
+      'refinery/businesses/business':
+        name: Name
+        website: Website
+        phone: Phone
+        street: Street
+        city: City
+        state: State
+        area: Area
+        category: Category
+        photo: Photo

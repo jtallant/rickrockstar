@@ -55,3 +55,4 @@ gem 'refinerycms-search', '~> 2.0.0', :git => 'git://github.com/resolve/refinery
 gem 'refinerycms-page-images', '~> 2.0.0'
 gem 'refinerycms-listings', :path => 'vendor/extensions'
 gem 'fog'
+gem 'refinerycms-businesses', :path => 'vendor/extensions'

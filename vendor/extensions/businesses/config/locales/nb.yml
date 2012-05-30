@@ -1,0 +1,35 @@
+nb:
+  refinery:
+    plugins:
+      businesses:
+        title: Businesses
+    businesses:
+      admin:
+        businesses:
+          actions:
+            create_new: Lag en ny Business
+            reorder: Endre rekkefølgen på Businesses
+            reorder_done: Ferdig å endre rekkefølgen Businesses
+          records:
+            title: Businesses
+            sorry_no_results: Beklager! Vi fant ikke noen resultater.
+            no_items_yet: Det er ingen Businesses enda. Klikk på "Lag en ny Business" for å legge til din første business.
+          business:
+            view_live_html: Vis hvordan denne business ser ut offentlig <br/><em>(åpner i et nytt vindu)</em>
+            edit: Rediger denne business
+            delete: Fjern denne business permanent
+      businesses:
+        show:
+          other: Andre Businesses
+  activerecord:
+    attributes:
+      'refinery/businesses/business':
+        name: Name
+        website: Website
+        phone: Phone
+        street: Street
+        city: City
+        state: State
+        area: Area
+        category: Category
+        photo: Photo

@@ -30,3 +30,5 @@ Refinery::Listings::Engine.load_seed
 # 	x.parent_id = 11
 # 	x.save
 # end
+# Added by Refinery CMS Businesses extension
+Refinery::Businesses::Engine.load_seed
