@@ -33,6 +33,10 @@ module Rickrockstar
     # config.i18n.load_path += Dir[Rails.root.join('my', 'locales', '*.{rb,yml}').to_s]
     # config.i18n.default_locale = :de
 
+    config.to_prepare do
+        Refinery.searchable_models = [Refinery::Page, Refinery::Blog::Post, Refinery::Businesses::Business, Refinery::Listings::Listing]
+    end
+
     # Configure the default encoding used in templates for Ruby 1.9.
     config.encoding = "utf-8"
 
@@ -56,6 +60,7 @@ module Rickrockstar
     # Enable the asset pipeline
     config.assets.enabled = true
 
+    # Necessary for heroku
     config.assets.initialize_on_precompile = true
 
     # Version of your assets, change this if you want to expire all your assets
