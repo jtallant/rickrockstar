@@ -7,7 +7,7 @@ Refinery::Core.configure do |config|
 
   # When true will use Amazon's Simple Storage Service instead of
   # the default file system for storing resources and images
-  config.s3_backend = !(ENV['S3_KEY'].nil? || ENV['S3_SECRET'].nil?)
+  config.s3_backend = !(ENV['AKIAJDIGEOQGSIJRRY3A'].nil? || ENV['Gpz9uR9f0MoYL719uIC8qslSVldbyTONVLm3rICx'].nil?)
 
   # Whenever Refinery caches anything and can set a cache key, it will add
   # a prefix to the cache key containing the string you set here.
@@ -20,7 +20,7 @@ Refinery::Core.configure do |config|
   # This activates Google Analytics tracking within your website. If this
   # config is left blank or set to UA-xxxxxx-x then no remote calls to
   # Google Analytics are made.
-  # config.google_analytics_page_code = "UA-xxxxxx-x"
+  config.google_analytics_page_code = "UA-32102483-1"
 
   # Enable/disable authenticity token on frontend
   # config.authenticity_token_on_frontend = true
@@ -29,14 +29,14 @@ Refinery::Core.configure do |config|
   # config.menu_hide_children = false
 
   # CSS class selectors for menu helper
-  # config.menu_css = {:selected=>"selected", :first=>"first", :last=>"last"}
+  config.menu_css = {:selected=>"selected", :first=>"first", :last=>"last"}
 
   # Should set this if concerned about DOS attacks. See
   # http://markevans.github.com/dragonfly/file.Configuration.html#Configuration
   # config.dragonfly_secret = "342305e96c222fdce78ca5901f88dfe9bb45c101b55277c6"
 
   # Show/hide IE6 upgrade message in the backend
-  # config.ie6_upgrade_message_enabled = true
+  config.ie6_upgrade_message_enabled = true
 
   # Show/hide browser update message in the backend
   # config.show_internet_explorer_upgrade_message = false
