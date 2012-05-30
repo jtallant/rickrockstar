@@ -6,6 +6,8 @@ gem  'rails', '3.2.3'
 gem 'heroku'
 gem 'thin'
 gem 'slim'
+gem 'populator'
+gem 'faker'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
