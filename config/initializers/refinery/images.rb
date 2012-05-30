@@ -25,7 +25,7 @@ Refinery::Images.configure do |config|
   # config.preferred_image_view = :grid
 
   # Configure S3 (you can also use ENV for this)
-  The s3_backend setting by default defers to the core setting for this but can be set just for images.
+  # The s3_backend setting by default defers to the core setting for this but can be set just for images.
   config.s3_backend = Refinery::Core.s3_backend
   config.s3_bucket_name = ENV['aerefinery']
   config.s3_access_key_id = ENV['AKIAJDIGEOQGSIJRRY3A']
