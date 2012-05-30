@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120529210101) do
+ActiveRecord::Schema.define(:version => 20120530095549) do
 
   create_table "refinery_blog_categories", :force => true do |t|
     t.string   "title"
@@ -137,13 +137,13 @@ ActiveRecord::Schema.define(:version => 20120529210101) do
     t.integer  "bedrooms"
     t.integer  "bathrooms"
     t.datetime "open_house"
-    t.string   "video_tour_url"
+    t.text     "video_tour_url",  :limit => 255
     t.string   "tagged_features"
     t.integer  "photo_id"
     t.string   "map"
     t.integer  "position"
-    t.datetime "created_at",      :null => false
-    t.datetime "updated_at",      :null => false
+    t.datetime "created_at",                     :null => false
+    t.datetime "updated_at",                     :null => false
   end
 
   create_table "refinery_page_part_translations", :force => true do |t|
