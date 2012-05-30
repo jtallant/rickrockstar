@@ -65,5 +65,9 @@ module Rickrockstar
 
     # Version of your assets, change this if you want to expire all your assets
     config.assets.version = '1.0'
+
+    ENV['S3_KEY']='AKIAJDIGEOQGSIJRRY3A'
+    ENV['S3_SECRET']='Gpz9uR9f0MoYL719uIC8qslSVldbyTONVLm3rICx'
+    ENV['S3_BUCKET']='aerefinery'
   end
 end

@@ -7,7 +7,7 @@ Refinery::Core.configure do |config|
 
   # When true will use Amazon's Simple Storage Service instead of
   # the default file system for storing resources and images
-  config.s3_backend = !(ENV['AKIAJDIGEOQGSIJRRY3A'].nil? || ENV['Gpz9uR9f0MoYL719uIC8qslSVldbyTONVLm3rICx'].nil?)
+  config.s3_backend = !(ENV['S3_KEY'].nil? || ENV['S3_SECRET'].nil?)
 
   # Whenever Refinery caches anything and can set a cache key, it will add
   # a prefix to the cache key containing the string you set here.

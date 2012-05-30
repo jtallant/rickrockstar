@@ -10,10 +10,10 @@ Refinery::Resources.configure do |config|
 
   # Configure S3 (you can also use ENV for this)
   # The s3_backend setting by default defers to the core setting for this but can be set just for resources.
-  config.s3_backend = Refinery::Core.s3_backend
-  config.s3_bucket_name = ENV['aerefinery']
-  config.s3_access_key_id = ENV['AKIAJDIGEOQGSIJRRY3A']
-  config.s3_secret_access_key = ENV['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']
+  # config.s3_backend = Refinery::Core.s3_backend
+  # config.s3_bucket_name = ENV['aerefinery']
+  # config.s3_access_key_id = ENV['AKIAJDIGEOQGSIJRRY3A']
+  # config.s3_secret_access_key = ENV['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']
   # config.s3_region = ENV['S3_REGION]
 
   # Configure Dragonfly
@@ -22,5 +22,4 @@ Refinery::Resources.configure do |config|
   # config.dragonfly_secret = "342305e96c222fdce78ca5901f88dfe9bb45c101b55277c6"
   # config.dragonfly_url_format = "/system/resources/:job/:basename.:format"
   # config.datastore_root_path = "/Users/TALLANT/Sites/rickrockstar/public/system/refinery/resources"
-
 end
