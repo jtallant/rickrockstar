@@ -22,7 +22,8 @@ module Refinery
     protected
 
       def find_all_events
-        @events = Event.order('position ASC')
+        # @events = Event.order('position ASC')
+        @events = Event.order('data DESC')
       end
 
       def find_page

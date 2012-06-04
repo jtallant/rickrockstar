@@ -3,7 +3,7 @@ module Refinery
     class Event < Refinery::Core::BaseModel
       self.table_name = 'refinery_events'
 
-      attr_accessible :title, :position, :date, :photo, :blurb
+      attr_accessible :title, :position, :date, :photo_id, :blurb
 
       acts_as_indexed :fields => [:title, :blurb]
 
