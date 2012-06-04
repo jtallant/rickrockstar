@@ -34,7 +34,7 @@ module Rickrockstar
     # config.i18n.default_locale = :de
 
     config.to_prepare do
-        Refinery.searchable_models = [Refinery::Page, Refinery::Blog::Post, Refinery::Businesses::Business, Refinery::Listings::Listing]
+        Refinery.searchable_models = [Refinery::Page, Refinery::Blog::Post, Refinery::Businesses::Business, Refinery::Listings::Listing, Refinery::Events::Event]
     end
 
     # Configure the default encoding used in templates for Ruby 1.9.
