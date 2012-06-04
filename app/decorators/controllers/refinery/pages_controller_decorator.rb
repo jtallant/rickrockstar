@@ -1,11 +1,11 @@
-# Refinery::PagesController.class_eval do
-#   before_filter :authorize
-  
-# private
+Refinery::PagesController.class_eval do
 
-#   def authorize
-#     render text: "Not Authorized"
-#   end
-# end
+	before_filter :find_all_blog_posts, :only => [:home]
 
-# This is an example way to modify  refinery controllers
+	protected
+
+		def find_all_blog_posts
+			@blog_posts = Refinery::Blog::Post.live
+		end
+
+end

@@ -3,6 +3,7 @@
     <% content_for :stylesheets, stylesheet_link_tag('refinery/site_bar') unless !!local_assigns[:exclude_css] %>
     <%= yield(:stylesheets) unless local_assigns[:head] or local_assigns[:exclude_css] %>
   <% end -%>
+  <% if admin? %>
   <div id='ae_site_bar'>
     <div id='ae_site_bar_content' class='clearfix'>
       <div id='ae_editor_switch'>
@@ -19,4 +20,5 @@
       </div>
     </div>
   </div>
+  <% end %>
 <% end %>
