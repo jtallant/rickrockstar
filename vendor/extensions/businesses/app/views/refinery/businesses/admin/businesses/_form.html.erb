@@ -3,55 +3,55 @@
               :object => @business,
               :include_object_name => true %>
 
-  
+
   <div class='field'>
     <%= f.label :name -%>
     <%= f.text_field :name, :class => 'larger widest'  -%>
 
   </div>
-  
+
   <div class='field'>
     <%= f.label :website -%>
     <%= f.text_field :website  -%>
 
   </div>
-  
+
   <div class='field'>
     <%= f.label :phone -%>
     <%= f.text_field :phone  -%>
 
   </div>
-  
+
   <div class='field'>
     <%= f.label :street -%>
     <%= f.text_field :street  -%>
 
   </div>
-  
+
   <div class='field'>
     <%= f.label :city -%>
     <%= f.text_field :city  -%>
 
   </div>
-  
+
   <div class='field'>
     <%= f.label :state -%>
     <%= f.text_field :state  -%>
 
   </div>
-  
+
   <div class='field'>
     <%= f.label :area -%>
     <%= f.text_field :area  -%>
 
   </div>
-  
+
   <div class='field'>
     <%= f.label :category -%>
     <%= f.text_field :category  -%>
 
   </div>
-  
+
   <div class='field'>
     <%= f.label :photo -%>
     <%= render '/refinery/admin/image_picker',
@@ -61,7 +61,27 @@
                :toggle_image_display => false %>
 
   </div>
-  
+
+  <div class='field'>
+    <div id='page-tabs' class='clearfix ui-tabs ui-widget ui-widget-content ui-corner-all'>
+      <ul id='page_parts'>
+        <% [:description].each_with_index do |part, part_index| %>
+          <li class='ui-state-default<%= ' ui-state-active' if part_index == 0 %>'>
+            <%= link_to t("#{part}", :scope => "activerecord.attributes.refinery/businesses/business", :default => part.to_s.titleize), "##{part}" %>
+          </li>
+        <% end %>
+      </ul>
+      <div id='page_part_editors'>
+        <% [:description].each do |part| %>
+          <div class='page_part' id='<%= part %>'>
+            <%= f.text_area part, :rows => 20, :class => 'wymeditor widest' -%>
+          </div>
+        <% end %>
+      </div>
+    </div>
+
+  </div>
+
   <%= render '/refinery/admin/form_actions', :f => f,
              :continue_editing => false,
              :delete_title => t('delete', :scope => 'refinery.businesses.admin.businesses.business'),

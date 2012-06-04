@@ -57,6 +57,12 @@
       <%= image_fu @business.photo, nil %>
     </p>
   </section>
+  <section>
+    <h1>Description</h1>
+    <p>
+      <%=raw @business.description %>
+    </p>
+  </section>
 <% end %>
 
 <% content_for :body_content_right do %>

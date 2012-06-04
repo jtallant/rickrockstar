@@ -32,3 +32,6 @@ Refinery::Listings::Engine.load_seed
 # end
 # Added by Refinery CMS Businesses extension
 Refinery::Businesses::Engine.load_seed
+
+# Added by Refinery CMS Events extension
+Refinery::Events::Engine.load_seed
